@@ -7,4 +7,5 @@ class Staff(Person):
         self.joining_date = joining_date
 
     def view_info(self):
-        return super().view_info()
+        base = super().view_info()
+        return f"{base} | Employee ID: {self.employee_id} | Joining Date: {self.joining_date}"

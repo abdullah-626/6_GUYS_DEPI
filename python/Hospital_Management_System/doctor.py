@@ -1,11 +1,11 @@
 from staff import Staff
 
 class Doctor(Staff):
-    def _init_(self, national_id: str, name: str, age: int, phone: int, 
+    def __init__(self, national_id: str, name: str, age: int, phone: int, 
                  employee_id: str, joining_date: str, specialty: str, 
                  consultation_fee: float, license_number: str = ""):
 
-        super()._init_(national_id, name, age, phone, employee_id, joining_date)
+        super().__init__(national_id, name, age, phone, employee_id, joining_date)
         
         self.specialty = specialty
         self.consultation_fee = consultation_fee

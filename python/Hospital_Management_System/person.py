@@ -8,6 +8,6 @@ class Person (ABC):
         self.age = age
         self.phone = phone
     def view_info(self) -> str:
-        pass
+        return f"National ID: {self.national_id} | Name: {self.name} | Age: {self.age} | Phone: {self.phone}"
 
 
